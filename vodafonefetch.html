@@ -1,0 +1,27 @@
+<html>
+
+<script type="text/javascript" src="vodafonefetchvalidation.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <body>   
+<h1> Student Details </h1>
+<br>
+<br>   
+      <form action = "http://127.0.0.1:8081/fetchuser'" method = "POST">
+<div class="col-sm-4"></div>
+
+<div class="col-sm-4">
+   <label for="userid"> <h4>  UserId:  </h4> </label>    
+<input type = "text" name = "userid" id="id" onblur="sidValidate()"> <br>
+<span name="idError" id="idError" style="color: red"></span>
+ <input type = "submit" value = "Fetch">
+   
+</div>
+   </form>  
+   </body>
+
+</html>
